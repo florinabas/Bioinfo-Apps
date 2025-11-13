@@ -1,0 +1,23 @@
+model BloodTypes {
+##Prior for allele frequencies
+#Gamma trick to generate uniform Dirichlet dist
+a~dgamma(1,1)
+b~dgamma(1,1)
+o~dgamma(1,1)
+#Scaled frequency of alleles prior for each allele
+#frequence allele A
+p<-a/(a+b+o)
+#frequency allele B
+q<-b/(a+b+o)
+#frequency allele O
+r<-o/(a+b+o)
+##Multinomial likelihood models data
+#A phenotype frequency
+x[1]<-p*p+2*p*r
+#B phenotype frequency
+x[2]<-q*q+2*q*r
+#AB phenotype frequency
+x[3]<-2*p*q
+#O phenotype frequency
+x[4]<-r*r
+n[1:4]~dmulti(x[ ],total)}
