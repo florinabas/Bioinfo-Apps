@@ -1,5 +1,4 @@
 **Machine Learning & Statistical Inference**
-
 Project Description: Protein Expression Data Analysis in Mouse Models through applying machine learning and statistical techniques to analyze the Mice Protein Expression dataset (72 samples, 8 experimental groups) and identifying discriminant protein expression patterns across genotype, treatment, and behavioral conditions.
 
 Steps:
@@ -11,24 +10,21 @@ Steps:
 - Clustering (K-means, Biclustering): Applied unsupervised learning to identify homogeneous protein expression clusters and co-regulated protein subsets across experimental conditions.
 - ANOVA & statistical inference: Performed multi-factor ANOVA to detect proteins with significant differential expression, visualized results with Manhattan-style plots, and linked findings to behavioral effects.
 
-Gained practical experience in building reproducible NGS analysis pipelines, integrating bioinformatics tools, and performing downstream variant interpretation and functional analysis.
+
 
 
 **NGS Variant Analysis and Annotation Pipelines (Galaxy, Bcbio-nextgen, R/Bioconductor)**
-
-Project description: Implementing and optimizing end-to-end pipelines for detecting and annotating genomic variants from NGS data in Saccharomyces cerevisiae.
+Project description: Implementing and optimizing end-to-end pipelines for detecting and annotating genomic variants from NGS data in Saccharomyces cerevisiae. Gained hands-on experience applying supervised and unsupervised machine learning methods, dimensionality reduction, and statistical testing to biological datasets.
 
 Steps:
 1. Galaxy workflow: Built a complete variant calling pipeline integrating tools such as FastQC, BWA, Samtools, Picard, FreeBayes, SnpEff, bcftools, and MultiQC. The workflow performed quality control, read alignment to the sacCer3 reference genome, variant detection, annotation, and comprehensive reporting for multiple biological replicates.
 2. Bcbio-nextgen pipeline: Configured a GATK-based germline variant calling workflow using Bowtie2 for alignment and HaplotypeCaller for variant detection, including automated SnpEff annotation and multi-sample VCF comparison with bcftools.
 3. Variant annotation and comparative analysis in R: Developed R scripts leveraging Bioconductor packages (VariantAnnotation, GenomicRanges, BSgenome, TxDb, ReactomePA, topGO) to annotate variants, identify coding and intergenic changes, determine nonsynonymous SNPs, and perform functional enrichment analysis. Used bedr for intersection and Venn analyses to compare results across replicates and between pipelines.
 
-Gained hands-on experience applying supervised and unsupervised machine learning methods, dimensionality reduction, and statistical testing to biological datasets.
 
 
 **Biostatistics in R**
-
-Project Description: Analyzed clinical data from a study of 29 patients receiving Botox treatment for migraines, focusing on treatment efficacy and factors influencing migraine frequency, intensity, and presence of aura.
+Project Description: Analyzed clinical data from a study of 29 patients receiving Botox treatment for migraines, focusing on treatment efficacy and factors influencing migraine frequency, intensity and presence of aura. Gained hands-on experience with R for data handling, visualization and statistical analysis, applied non-parametric tests and regression models to real clinical data and learned to interpret results in a biomedical context and communicate findings clearly.
 
 Steps:
 - Data Cleaning & Preparation: Standardized variable formats, handled missing values and outliers.
@@ -37,4 +33,17 @@ Steps:
 - Regression Modeling: Built linear and logistic regression models to quantify the impact of treatment and patient factors on migraine intensity and aura presence.
 - Prediction & Interpretation: Predicted outcomes for missing data points and evaluated model performance.
 
-Gained hands-on experience with R for data handling, visualization and statistical analysis, applied non-parametric tests and regression models to real clinical data and learned to interpret results in a biomedical context and communicate findings clearly.
+
+
+
+
+**Stochastic Modeling and Bayesian Simulation in Computational Biology**
+Project Description: Developed and applied stochastic and probabilistic models to study biological sequences and genetic data. Combined Markov chains, Hidden Markov Models (HMMs), Monte Carlo simulations, and Markov Chain Monte Carlo (MCMC) techniques to simulate processes, predict hidden states, and estimate biological parameters such as nucleotide distributions and ABO blood group allele frequencies.
+
+Steps:
+- Markov and HMM Modeling: Defined model properties, built transition and emission matrices, simulated DNA sequence evolution, and applied the Viterbi algorithm to identify coding regions.
+- Random Walk Simulations: Explored 1D and 2D stochastic processes to understand sequence dynamics and probabilistic behavior.
+- Monte Carlo Simulations: Generated random samples using inverse CDF and direct sampling to simulate target probability distributions.
+- Gibbs Sampling & MCMC: Implemented Gibbs sampling for multivariate distributions, analyzed effects of correlations and initial values, and estimated posterior distributions of allele frequencies in ABO blood groups using Bayesian methods.
+- Bayesian Analysis & Inference: Defined priors and likelihoods, ran simulations in R and WinBUGS, and interpreted marginal and stationary distributions for reliable biological inference.
+
